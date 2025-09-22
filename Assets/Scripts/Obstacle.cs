@@ -5,6 +5,11 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     private GameObject player;
+    AudioManager audioManager;
+
+    private void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +25,7 @@ public class Obstacle : MonoBehaviour
         }
         else if(collision.tag == "Player")
         {
+            audioManager.PLaySFX(audioManager.death);
             Destroy(player.gameObject);
         }
     }

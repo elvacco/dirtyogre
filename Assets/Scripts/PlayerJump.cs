@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 {
 
-    Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rb;
 
     [SerializeField] int jumpPower;
     [SerializeField] float fallMultiplier;
@@ -19,7 +19,6 @@ public class PlayerJump : MonoBehaviour
     void Start()
     {
         vecGravity = new Vector2(0, -Physics2D.gravity.y);
-        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

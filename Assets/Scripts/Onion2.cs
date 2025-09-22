@@ -8,6 +8,11 @@ public class Onion2 : MonoBehaviour
     private bool hasTriggered;
 
     private OnionScoreManager onionScoreManager;
+    AudioManager audioManager;
+
+    private void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     public void Start()
     {
@@ -17,6 +22,7 @@ public class Onion2 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("Player") && !hasTriggered)
         {
+            audioManager.PLaySFX(audioManager.takeOnion);
             hasTriggered = true;
             onionScoreManager.ChangeOnions(value);
             Destroy(gameObject);
