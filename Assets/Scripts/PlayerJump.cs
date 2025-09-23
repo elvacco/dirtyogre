@@ -26,7 +26,8 @@ public class PlayerJump : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(2f,0.4f), CapsuleDirection2D.Horizontal, 0, groundLayer);
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if(isGrounded && (Input.GetButtonDown("Jump") 
+    || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }

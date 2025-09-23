@@ -418,10 +418,10 @@ RectTransform:
   - {fileID: 1519458746}
   m_Father: {fileID: 200047543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1059.2, y: -789.435}
-  m_SizeDelta: {x: 600, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86827211
 MonoBehaviour:
@@ -545,7 +545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &200047543
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1007,10 +1007,10 @@ RectTransform:
   - {fileID: 1709820690}
   m_Father: {fileID: 200047543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1059.2, y: -189.435}
-  m_SizeDelta: {x: 600, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &308709119
 MonoBehaviour:
@@ -7786,10 +7786,10 @@ RectTransform:
   - {fileID: 1992850011}
   m_Father: {fileID: 200047543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1059.2, y: -489.435}
-  m_SizeDelta: {x: 600, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992636656
 MonoBehaviour:
@@ -8190,7 +8190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1099057269
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9371,6 +9371,7 @@ GameObject:
   - component: {fileID: 1466063913}
   - component: {fileID: 1466063912}
   - component: {fileID: 1466063915}
+  - component: {fileID: 1466063916}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9462,6 +9463,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 272d86f48da23485d8ab0a316ba1cc30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1466063916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466063911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ffdc871a29d4e1b9c060489d4d6a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1499618903
@@ -11009,7 +11022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1968114987
 RectTransform:
   m_ObjectHideFlags: 0
